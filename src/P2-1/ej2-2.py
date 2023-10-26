@@ -1,8 +1,8 @@
-contraseña = input("introduce la contraseña: ")
-contaseñas = ('hola','admin','contraseña')
-
-while contraseña not in contaseñas :
-    contraseña = input("introduce la contraseña correcta: ")
+def seguridad (contraseña):
+    contaseñas = ('hola','admin','contraseña')
+    while contraseña not in contaseñas :
+        contraseña = input("introduce la contraseña correcta: ")
     if contraseña in contaseñas:
-        break
-print("felicidades sabes la contraseña")
+        return "felicidades sabes la contraseña"
+contraseña = input("introduce la contraseña: ")
+print(seguridad(contraseña))
