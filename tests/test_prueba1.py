@@ -1,7 +1,5 @@
 import pytest
-from prueba1 import mayor
-
-
+from src.P2_10.prueba1 import mayor_que
 @pytest.mark.parametrize(
     "input_n1, input_n2, expected",
     [
@@ -10,8 +8,8 @@ from prueba1 import mayor
     (100, -100, 100),
     (-15, -1, -1),
     (-3, 8, 8),
-    (9, 0, 9)
+    (9,-1, 9)
     ]
 )
-def test_mayor_params(input_n1, input_n2, expected):
-    assert mayor(input_n1, input_n2) == expected
+def test_suma_params(input_n1, input_n2, expected):
+    assert mayor_que(input_n1, input_n2) == expected
