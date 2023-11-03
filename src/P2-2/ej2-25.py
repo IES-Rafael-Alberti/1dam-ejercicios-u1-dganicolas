@@ -1,6 +1,0 @@
-frase = input("Introduce una frase: ")
-palabras = frase.split()
-palabra_mas_larga = max(palabras, key=len)
-cantidad_palabras = len(palabras)
-print("La palabra más larga es:", palabra_mas_larga)
-print("Hay", cantidad_palabras, "palabras en la frase.")
